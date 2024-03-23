@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: Apache-2.0 WITH LLVM-exception
  */
 
-import 'mocha';
+import { describe, it } from 'node:test';
 import { expect } from 'chai';
 import {
     BlockNode,

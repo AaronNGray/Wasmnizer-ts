@@ -4,7 +4,7 @@
  */
 
 import ts from 'typescript';
-import 'mocha';
+import { describe, it } from 'node:test';
 import { expect } from 'chai';
 import {
     BinaryExpression,

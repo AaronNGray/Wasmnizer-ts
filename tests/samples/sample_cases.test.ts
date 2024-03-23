@@ -5,7 +5,7 @@
 
 import { testCompile } from '../utils/test_helper.js';
 
-import 'mocha';
+import { describe, it }  from 'node:test';
 import { expect } from 'chai';
 import { fstat, readdirSync } from 'fs';
 import path from 'path';
@@ -32,7 +32,7 @@ const STRINGREF_LIST = [
 ]
 
 describe('basic_cases', function () {
-    this.timeout(50000);
+//    this.timeout(50000);
     readdirSync(__dirname)
         .filter((d) => {
             return d.endsWith('.ts') && !d.endsWith('.test.ts');
