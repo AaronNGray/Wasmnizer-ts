@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "target": "ES6",
+    "target": "ESNext",
     "module": "ESNext",
     "moduleResolution": "Node",
     "esModuleInterop": true,
@@ -11,6 +11,11 @@
     "sourceMap": true,
     "allowJs": true,
     "experimentalDecorators": true,
+  },
+  "ts-node": {
+    "experimentalSpecifierResolution": "node",
+    "transpileOnly": true,
+    "esm": true,
   },
   "include": ["scripts/*", "src/**/*", "cli/*", "config/*"]
 }
